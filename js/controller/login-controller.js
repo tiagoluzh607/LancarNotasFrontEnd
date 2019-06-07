@@ -20,3 +20,10 @@ $('.validate-form').on('submit',function(event){
     event.preventDefault();
     logar();
 });
+
+$.support.cors = true;
+
+
+$.get( "http://www.olimposistema.com.br/api/alunos", function( alunos ) {
+    console.log(alunos);
+});
