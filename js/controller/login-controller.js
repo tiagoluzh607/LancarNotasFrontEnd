@@ -21,8 +21,6 @@ $('.validate-form').on('submit',function(event){
     logar();
 });
 
-$.support.cors = true;
-
 
 $.get( "http://www.olimposistema.com.br/api/alunos", function( alunos ) {
     console.log(alunos);
